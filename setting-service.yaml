@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars:
+  tasks:
+    - name: systemctl enable --now services
+      service: name={{ item }} state=started enabled=yes
+      with_items:
+        - chronyd

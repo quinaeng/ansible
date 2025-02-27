@@ -1,0 +1,4 @@
+[group1]
+server01 ansible_host=192.168.10.151 ansible_user=root ansible_password='P@ssw0rd’
+[group2]
+server02 ansible_host=192.168.10.152 ansible_user=root ansible_password='P@ssw0rd'

@@ -1,0 +1,15 @@
+---
+- hosts: all
+  user: root
+  # become: yes
+  vars:
+    username: user01
+    password: P@ssw0rd
+  tasks:
+    - name: Create User
+      user:
+        name: "{{ username }}"
+        password: "{{ password | password_hash('sha512') }}"
+        # groups: secgroup1
+        state: present
+

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  vars:
+  tasks:
+    - name: dnf install packages
+      dnf:
+        name:
+          - httpd
+        state: present

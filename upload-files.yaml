@@ -1,0 +1,12 @@
+---
+- hosts: all
+  vars:
+  tasks:
+    - name: copy file to remote host
+      copy:
+        src: ./test.txt
+        dest: /tmp
+      # owner: user01
+      # group: user01
+      # mode: 0644
+

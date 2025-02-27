@@ -1,0 +1,9 @@
+ ---
+- hosts: all
+  vars:
+  tasks:
+    - name: Download file
+      fetch:
+       src: /tmp/test.txt
+       dest: ./
+       flat: yes

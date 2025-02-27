@@ -1,0 +1,6 @@
+---
+- hosts: all
+  vars:
+  tasks:
+    - name: exec commands
+      command: touch /tmp/testfile.txt
